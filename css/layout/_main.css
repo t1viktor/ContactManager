@@ -1,0 +1,74 @@
+
+.main {
+  flex: 1;
+  padding: var(--spacing-xl);
+}
+
+.search-add {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.search-add div {
+  width: 100%;
+}
+
+.search-add .button {
+  align-self: flex-start;
+}
+
+#contact-list th[contenteditable="true"] {
+  background-color: #f0f0f0;  
+  border: 3px solid #ff0000;     
+  padding: 8px;               
+  text-align: left;           
+  cursor: text;               
+}
+
+#contact-list th[contenteditable="true"]:focus {
+  outline: 2px solid #007bff; 
+  background-color: #e0e0e0;  
+}
+
+.contact-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 750px) {
+  #contact-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .contact-item .contact-details {
+    display: none;
+  }
+
+  .contact-item.active .contact-details {
+    display: block;
+  }
+
+  .contact-item .contact-info {
+    display: block;
+  }
+
+  .contact-item .contact-info:nth-child(2),
+  .contact-item .contact-info:nth-child(3) {
+    display: none;
+  }
+
+  .contact-item.active .contact-info:nth-child(2),
+  .contact-item.active .contact-info:nth-child(3) {
+    display: block;
+  }
+
+}
+

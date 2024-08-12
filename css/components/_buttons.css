@@ -1,0 +1,35 @@
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  text-align: center;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+}
+
+.button-cancel {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.button-cancel:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+}

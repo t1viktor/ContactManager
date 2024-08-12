@@ -1,0 +1,21 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
